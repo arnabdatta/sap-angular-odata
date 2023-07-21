@@ -1,0 +1,46 @@
+{
+    "xsappname": "sap-angular-odata",
+    "tenant-mode": "dedicated",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.Display",
+            "description": "display"
+        },
+        {
+            "name": "$XSAPPNAME.Edit",
+            "description": "edit"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "Viewer",
+            "description": "View all apps",
+            "scope-references": [
+                "$XSAPPNAME.Display"
+            ]
+        },
+        {
+            "name": "EditorGRO",
+            "description": "Edit, GRO",
+            "scope-references": [
+                "$XSAPPNAME.Edit"
+            ]
+        }
+    ],
+    "role-collections": [
+        {
+            "name": "Angular Display",
+            "description": "Angular roles",
+            "role-template-references": [
+                "$XSAPPNAME.Viewer"
+            ]
+        },
+        {
+            "name": "Angular Edit",
+            "description": "Angular roles",
+            "role-template-references": [
+                "$XSAPPNAME.EditGRO"
+            ]
+        }
+    ]
+}

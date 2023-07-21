@@ -1,0 +1,19 @@
+---
+applications:
+  - name: sap-angular-odata
+    memory: 512M
+    path: ./dist/sap-angular-odata
+    disk_quota: 1024M
+    stack: cflinuxfs4
+    buildpacks:
+      - nodejs_buildpack
+    instances: 1
+    random-route: false
+    env:
+      TENANT_HOST_PATTERN: '^(.*)-sap-angular-odata.cfapps.ap21.hana.ondemand.com' 
+      SESSION_TIMEOUT: 960
+    services:
+      - connectivity
+      - destination
+      - applog
+      - xsuaa-application
