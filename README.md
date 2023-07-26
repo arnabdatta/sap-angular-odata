@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
+## Steps to use it with SAP On premise systems
+
+Host your own SAP on premise (SAP ASE) or any other on premise system
+connect the BTP account with the SAP on premise system with cloud connector
+Create destination 
+Use the GitHub example with XSUAA service and SAP Approuter
+
+## Deployement
+
+To deploy use `cf psuh` command
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
