@@ -1,4 +1,4 @@
-# SapAngularOdata
+# Angular App with SAP On-Premise Backend OData Source
 
 ## Steps to use it with SAP On premise systems
 
