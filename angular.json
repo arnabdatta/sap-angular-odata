@@ -37,17 +37,17 @@
                 {
                   "input": "src/cf",
                   "output": "/",
-                  "glob":"*.yml"
+                  "glob": "*.yml"
                 },
                 {
                   "input": "src/cf",
                   "output": "/",
-                  "glob":"*.json"
+                  "glob": "*.json"
                 },
                 {
                   "input": "src",
                   "output": "/",
-                  "glob":"*.json"
+                  "glob": "*.json"
                 }
               ],
               "budgets": [
@@ -70,7 +70,26 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "input": "src/cf",
+                  "output": "/",
+                  "glob": "*.yml"
+                },
+                {
+                  "input": "src/cf",
+                  "output": "/",
+                  "glob": "*.json"
+                },
+                {
+                  "input": "src",
+                  "output": "/",
+                  "glob": "*.json"
+                }
+              ],
             }
           },
           "defaultConfiguration": "production"
