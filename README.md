@@ -7,6 +7,8 @@
 - Create destination 
 - Use the GitHub example with XSUAA service and SAP Approuter
 
+- More details: https://blogs.sap.com/2023/06/09/develop-and-deploy-an-angular-app-on-sap-btp-cloud-foundry-with-on-premises-odata/
+
 ## Deployement
 
 To deploy use `cf psuh` command
